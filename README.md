@@ -1,5 +1,5 @@
-# Env-Stats
+# WUG
 
-> Fetch System Environment Information and Statistics
+> What You Got: Tool for fetching system various information and statistics about your environment.
 
 ---
