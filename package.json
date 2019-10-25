@@ -12,8 +12,5 @@
 		"test": "echo 'No Tests to run' & exit 0"
 	},
 	"dependencies": {},
-	"devDependencies": {
-		"ava": "^2.1.0",
-		"xo": "^0.24.0"
-	}
+	"devDependencies": {}
 }
