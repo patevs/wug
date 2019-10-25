@@ -1,0 +1,19 @@
+{
+	"name": "wug",
+	"version": "0.0.0",
+	"description": "WUG",
+	"license": "MIT",
+	"repository": "patevs/wug",
+	"author": "PatEvs",
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "echo 'No Tests to run' & exit 0"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^2.1.0",
+		"xo": "^0.24.0"
+	}
+}
