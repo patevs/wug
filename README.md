@@ -1,5 +1,5 @@
 # Env-Stats
 
-> Environment Information and Statistics
+> Fetch System Environment Information and Statistics
 
 ---
