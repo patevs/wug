@@ -15,6 +15,9 @@ build/Release
 # Dependency directories
 node_modules/
 
+# Webpack build
+dist/
+
 # dotenv environment variables file
 .env
 .env.test
