@@ -13,5 +13,8 @@
 * [`log-update`](https://github.com/sindresorhus/log-update)
 * [`boxen`](https://github.com/sindresorhus/boxen)
 * [`string-width`](https://github.com/sindresorhus/string-width)
+* [`columnify`](https://github.com/timoxley/columnify)
+* [`cli-columns`](https://github.com/shannonmoeller/cli-columns)
+* [`term-size`](https://github.com/sindresorhus/term-size)
 
 ---
