@@ -1,12 +1,11 @@
 
-/**************
- * * index.js *
- **************/
+/*****************
+ * * examples.js *
+ *****************/
 
 'use strict';
 
 // IMPORTS
-
 var Table = require('cli-table3');
 const execa = require('execa');
 
@@ -14,6 +13,10 @@ const execa = require('execa');
 	const {stdout} = await execa('echo', ['unicorns']);
 	console.log(stdout);
 })();
+
+// By default, headers will be red, and borders will be grey
+// var table = new Table({head:['a','b']});
+// table.push(['c','d']);
 
 // instantiate
 var table = new Table({
@@ -32,5 +35,15 @@ console.log(table.toString());
 // EXPORTS
 
 module.exports = {};
+
+/*
+module.exports = (input, {postfix = 'rainbows'} = {}) => {
+	if (typeof input !== 'string') {
+		throw new TypeError(`Expected a string, got ${typeof input}`);
+	}
+
+	return `${input} & ${postfix}`;
+};
+*/
 
 /* EOF */
