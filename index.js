@@ -26,6 +26,11 @@ table.push(
 
 console.log(table.toString());
 
+// EXPORTS
+
+module.exports = {};
+
+/*
 module.exports = (input, {postfix = 'rainbows'} = {}) => {
 	if (typeof input !== 'string') {
 		throw new TypeError(`Expected a string, got ${typeof input}`);
@@ -33,5 +38,6 @@ module.exports = (input, {postfix = 'rainbows'} = {}) => {
 
 	return `${input} & ${postfix}`;
 };
+*/
 
 /* EOF */
