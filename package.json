@@ -1,6 +1,6 @@
 {
 	"name": "wug",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "WUG",
 	"license": "MIT",
 	"repository": "patevs/wug",
@@ -11,6 +11,8 @@
 	"scripts": {
 		"test": "echo 'No Tests to run' & exit 0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"cli-table3": "^0.5.1"
+	},
 	"devDependencies": {}
 }
