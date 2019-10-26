@@ -5,6 +5,8 @@
 ## Links & Resources
 
 * [`cli-table3`](https://github.com/cli-table/cli-table3)
+* [`term-size`](https://github.com/sindresorhus/term-size)
+* [`execa`](https://github.com/sindresorhus/execa)
 
 [](.)
 
@@ -15,8 +17,6 @@
 * [`string-width`](https://github.com/sindresorhus/string-width)
 * [`columnify`](https://github.com/timoxley/columnify)
 * [`cli-columns`](https://github.com/shannonmoeller/cli-columns)
-* [`term-size`](https://github.com/sindresorhus/term-size)
-* [`execa`](https://github.com/sindresorhus/execa)
 * [`has`](https://github.com/kdabir/has)
 
 ---
