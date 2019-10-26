@@ -9,6 +9,8 @@
 		"node": ">=8"
 	},
 	"scripts": {
+		"build": "webpack --config webpack.prod.js",
+		"watch": "webpack --watch --config webpack.dev.js",
 		"start": "node index.js",
 		"test": "echo \"Error: no test specified\" && exit 0"
 	},
