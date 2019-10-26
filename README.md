@@ -16,5 +16,6 @@
 * [`columnify`](https://github.com/timoxley/columnify)
 * [`cli-columns`](https://github.com/shannonmoeller/cli-columns)
 * [`term-size`](https://github.com/sindresorhus/term-size)
+* [`execa`](https://github.com/sindresorhus/execa)
 
 ---
