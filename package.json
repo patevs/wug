@@ -9,6 +9,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
+		"start": "node index.js",
 		"test": "echo 'No Tests to run' & exit 0"
 	},
 	"dependencies": {
