@@ -11,12 +11,12 @@ var Table = require('cli-table3');
 const execa = require('execa');
 const termSize = require('term-size');
 
-termSize();
-
 (async () => {
 	const {stdout} = await execa('echo', ['unicorns']);
 	console.log(stdout);
 })();
+
+termSize();
 
 // instantiate
 var table = new Table({
