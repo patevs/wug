@@ -8,7 +8,7 @@
  * * IMPORTS *
  *************/
 
-const spawn = require('cross-spawn');
+// const spawn = require('cross-spawn');
  // const Table = require('cli-table3');
 const termSize = require('term-size');
 
@@ -18,16 +18,6 @@ const termSize = require('term-size');
 
 const _termsize = termSize();
 console.log(_termsize);
-
-const run = () => {
-	// Spawn NPM asynchronously
-	// const child = spawn('npm', ['list', '-g', '-depth', '0'], { stdio: 'inherit' });
-	// Spawn NPM synchronously
-	// const result =
-	spawn.sync('npm', ['list', '-g', '-depth', '0'], { stdio: 'inherit' });
-	// console.log(result);
-}
-// run();
 
 // instantiate
 // var table = new Table({
