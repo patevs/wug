@@ -9,6 +9,7 @@
  *************/
 
 //
+const detect = require('./src/detect');
 
 /***************
  * * FUNCTIONS *
@@ -24,10 +25,10 @@
 	console.log("Starting WUG...");
 	// const col = getTermSize();
 	// genTable(col);
-	// const node = await getVersion('node');
-	// console.log(node);
-	// const npm = await getVersion('npm');
-	// console.log(npm);
+	const nodev = await detect.getVersion('node')
+	console.log(nodev);
+	const npmv = await detect.getVersion('npm')
+	console.log(npmv);
 })();
 
 /*************
