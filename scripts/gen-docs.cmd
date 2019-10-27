@@ -68,8 +68,20 @@ ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencie
 :: Move into docs\dev-dependencies directory
 CALL cd ..\dev-dependencies
 
+ECHO. && ECHO [96m - clean-webpack-plugin - [0m
+CALL curl https://raw.githubusercontent.com/johnagan/clean-webpack-plugin/master/README.md -o clean-webpack-plugin.md -#
+
 ECHO. && ECHO [96m - cross-env - [0m
 CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
+
+ECHO. && ECHO [96m - webpack - [0m
+CALL curl https://raw.githubusercontent.com/webpack/webpack/master/README.md -o webpack.md -#
+
+ECHO. && ECHO [96m - webpack-cli - [0m
+CALL curl https://raw.githubusercontent.com/webpack/webpack-cli/master/README.md -o webpack-cli.md -#
+
+ECHO. && ECHO [96m - webpack-merge - [0m
+CALL curl https://raw.githubusercontent.com/survivejs/webpack-merge/master/README.md -o webpack-merge.md -#
 
 :: ECHO. && ECHO [96m - eslint - [0m
 :: CALL curl https://raw.githubusercontent.com/eslint/eslint/master/README.md -o eslint.md -#
