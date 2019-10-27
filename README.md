@@ -8,6 +8,7 @@
 * [`cross-env`](https://github.com/kentcdodds/cross-env)
 * [`execa`](https://github.com/sindresorhus/execa)
 * [`has`](https://github.com/kdabir/has)
+* [`node-cross-spawn`](https://github.com/moxystudio/node-cross-spawn)
 * [`platform.js`](https://github.com/bestiejs/platform.js)
 * [`term-size`](https://github.com/sindresorhus/term-size)
 
