@@ -33,7 +33,7 @@ const getTermSize = () => {
 /**
  * Creates and displays a table
  */
-const genTable = () => {
+const genTable = (col) => {
 	// Instantiate a new table
 	let table = new Table({
 		head: ['COL 1', 'COL 2', 'COL 3'],
@@ -57,13 +57,19 @@ const genTable = () => {
 })();
 */
 
+const getNodeVersion = async () => {
+	const {stdout} = await execa('node', ['--version']);
+	console.log(stdout);
+}
+
 /*****************
  * * ENTRY POINT *
  *****************/
 
 (() => {
-	getTermSize();
-	genTable();
+	const col = getTermSize();
+	genTable(col);
+	getNodeVersion();
 })();
 
 /*************
