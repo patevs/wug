@@ -10,6 +10,7 @@
 	},
 	"scripts": {
 		"start": "node index.js",
+		"build": "babel src -d lib",
 		"test": "echo \"Error: no test specified\" && exit 0",
 		"docs": "cd scripts && gen-docs.cmd"
 	},
