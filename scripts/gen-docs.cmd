@@ -5,15 +5,20 @@
 :: -------------------- ::
 
 :: Batch script which downloads project dependencies documentation.
-:: Requires curl to be installed.
-
-:: TODO: Verify curl is installed.
+:: Requires Curl to be installed.
 
 CLS
 ECHO. && ECHO [4mRunning Documentation Download Script[0m
 
 :: To download a file from GitHub run:
 :: CALL curl https://raw.githubusercontent.com/user/repository/branch/filename
+
+:: Verify Curl is installed & can be found
+ECHO. & ECHO [92m Verifying Curl Installation... [0m
+
+ECHO. & ECHO  [45m Curl Installation: [0m & ECHO.
+WHERE curl
+IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Curl installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Remove old docs directory if exists
 IF EXIST ..\docs (
@@ -28,9 +33,9 @@ CALL mkdir ..\docs\dependencies
 ECHO [92m  Done! [0m
 
 :: Create docs\dev-dependencies directory
-ECHO. && ECHO [96m Creating [4mdocs\dev-dependencies[0m [96mdirectory... [0m
-CALL mkdir ..\docs\dev-dependencies
-ECHO [92m  Done! [0m
+:: ECHO. && ECHO [96m Creating [4mdocs\dev-dependencies[0m [96mdirectory... [0m
+:: CALL mkdir ..\docs\dev-dependencies
+:: ECHO [92m  Done! [0m
 
 :: ECHO. && ECHO [92mDownloading Documentation for Project Dependencies... [0m
 
