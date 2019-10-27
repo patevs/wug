@@ -15,8 +15,11 @@ build/Release
 # Dependency directories
 node_modules/
 
-# Webpack build
+# Webpack build output
 dist/
+
+# Babel build output
+lib/
 
 # dotenv environment variables file
 .env
