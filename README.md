@@ -16,6 +16,7 @@
 
 ### Development Dependencies
 
+* [`babel`](https://github.com/babel/babel)
 * [`clean-webpack-plugin`](.)
 * [`cross-env`](https://github.com/kentcdodds/cross-env)
 * [`webpack`](.)
