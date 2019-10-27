@@ -37,10 +37,10 @@ ECHO [92m  Done! [0m
 :: CALL mkdir ..\docs\dev-dependencies
 :: ECHO [92m  Done! [0m
 
-:: ECHO. && ECHO [92mDownloading Documentation for Project Dependencies... [0m
+ECHO. && ECHO [92mDownloading Documentation for Project Dependencies... [0m
 
-:: Move into docs\dependencies directory
-:: CALL cd ..\docs\dependencies
+Move into docs\dependencies directory
+CALL cd ..\docs\dependencies
 
 :: ECHO. && ECHO [96m - boxen - [0m
 :: CALL curl https://raw.githubusercontent.com/sindresorhus/boxen/master/readme.md -o boxen.md -#
