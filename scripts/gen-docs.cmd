@@ -48,8 +48,14 @@ CALL cd ..\docs\dependencies
 :: ECHO. && ECHO [96m - chalk - [0m
 :: CALL curl https://raw.githubusercontent.com/chalk/chalk/master/readme.md -o chalk.md -#
 
-:: ECHO. && ECHO [96m - cli-table3 - [0m
-:: CALL curl https://raw.githubusercontent.com/cli-table/cli-table3/master/README.md -o cli-table3.md -#
+ECHO. && ECHO [96m - cli-table3 - [0m
+CALL curl https://raw.githubusercontent.com/cli-table/cli-table3/master/README.md -o cli-table3.md -#
+
+ECHO. && ECHO [96m - cross-env - [0m
+CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
+
+ECHO. && ECHO [96m - execa - [0m
+CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md -o execa.md -#
 
 :: ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencies... [0m
 
