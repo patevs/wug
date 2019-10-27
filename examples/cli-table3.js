@@ -1,18 +1,15 @@
-
 /****************************
  * * examples/cli-table3.js *
  ****************************/
 
 'use strict';
 
-// IMPORTS
-var Table = require('cli-table3');
-const execa = require('execa');
+/*************
+ * * IMPORTS *
+ *************/
 
-(async () => {
-	const {stdout} = await execa('echo', ['unicorns']);
-	console.log(stdout);
-})();
+// var Table = require('cli-table3');
+const Table = require('cli-table3');
 
 // By default, headers will be red, and borders will be grey
 // var table = new Table({head:['a','b']});
@@ -32,18 +29,10 @@ table.push(
 
 console.log(table.toString());
 
-// EXPORTS
+/*************
+ * * EXPORTS *
+ *************/
 
-module.exports = {};
-
-/*
-module.exports = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
-
-	return `${input} & ${postfix}`;
-};
-*/
+// module.exports = {};
 
 /* EOF */
