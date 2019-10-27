@@ -8,7 +8,7 @@
  * * IMPORTS *
  *************/
 
-// const spawn = require('cross-spawn');
+const spawn = require('cross-spawn');
 const Table = require('cli-table3');
 const termSize = require('term-size');
 
@@ -23,6 +23,11 @@ const columns = _termsize.columns;
 // console.log(columns);
 const col = Math.floor(columns / 4);
 // console.log(col);
+
+// Get NodeJS version
+const result = spawn.sync('node', ['--version'], { stdio: 'inherit' });
+
+console.log(result.toString());
 
 // Instantiate a new table
 let table = new Table({
