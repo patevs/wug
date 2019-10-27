@@ -33,9 +33,9 @@ CALL mkdir ..\docs\dependencies
 ECHO [92m  Done! [0m
 
 :: Create docs\dev-dependencies directory
-:: ECHO. && ECHO [96m Creating [4mdocs\dev-dependencies[0m [96mdirectory... [0m
-:: CALL mkdir ..\docs\dev-dependencies
-:: ECHO [92m  Done! [0m
+ECHO. && ECHO [96m Creating [4mdocs\dev-dependencies[0m [96mdirectory... [0m
+CALL mkdir ..\docs\dev-dependencies
+ECHO [92m  Done! [0m
 
 ECHO. && ECHO [92mDownloading Documentation for Project Dependencies... [0m
 
@@ -51,9 +51,6 @@ CALL cd ..\docs\dependencies
 ECHO. && ECHO [96m - cli-table3 - [0m
 CALL curl https://raw.githubusercontent.com/cli-table/cli-table3/master/README.md -o cli-table3.md -#
 
-ECHO. && ECHO [96m - cross-env - [0m
-CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
-
 ECHO. && ECHO [96m - execa - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md -o execa.md -#
 
@@ -66,10 +63,13 @@ CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.m
 ECHO. && ECHO [96m - term-size - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/term-size/master/readme.md -o term-size.md -#
 
-:: ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencies... [0m
+ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencies... [0m
 
 :: Move into docs\dev-dependencies directory
-:: CALL cd ..\dev-dependencies
+CALL cd ..\dev-dependencies
+
+ECHO. && ECHO [96m - cross-env - [0m
+CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
 
 :: ECHO. && ECHO [96m - eslint - [0m
 :: CALL curl https://raw.githubusercontent.com/eslint/eslint/master/README.md -o eslint.md -#
