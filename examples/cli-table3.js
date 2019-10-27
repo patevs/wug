@@ -11,6 +11,10 @@
 // var Table = require('cli-table3');
 const Table = require('cli-table3');
 
+/***************
+ * * FUNCTIONS *
+ ***************/
+
 // By default, headers will be red, and borders will be grey
 // var table = new Table({head:['a','b']});
 // table.push(['c','d']);
