@@ -57,6 +57,10 @@ CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md 
 ECHO. && ECHO [96m - has - [0m
 CALL curl https://raw.githubusercontent.com/kdabir/has/master/README.md -o has.md -#
 
+:: https://github.com/moxystudio/node-cross-spawn
+ECHO. && ECHO [96m - node-cross-spawn - [0m
+CALL curl https://raw.githubusercontent.com/moxystudio/node-cross-spawn/master/README.md -o node-cross-spawn.md -#
+
 ECHO. && ECHO [96m - platform.js - [0m
 CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.md -o platformjs.md -#
 
