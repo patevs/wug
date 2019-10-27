@@ -24,3 +24,15 @@
 * [`webpack-merge`](https://github.com/survivejs/webpack-merge)
 
 ---
+
+```json
+    "scripts": {
+        "start": "node index.js",
+        "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
+        "watch": "cross-env NODE_ENV=development webpack --config build/webpack.dev.js",
+        "test": "echo \"Error: no test specified\" && exit 0",
+        "docs": "cd scripts && gen-docs.cmd"
+    },
+```
+
+---
