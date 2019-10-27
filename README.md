@@ -8,6 +8,7 @@
 * [`term-size`](https://github.com/sindresorhus/term-size)
 * [`execa`](https://github.com/sindresorhus/execa)
 * [`cross-env`](https://github.com/kentcdodds/cross-env)
+* [`platform.js`](https://github.com/bestiejs/platform.js)
 * [`has`](https://github.com/kdabir/has)
 
 [](.)
