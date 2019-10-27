@@ -8,7 +8,6 @@
  * * IMPORTS *
  *************/
 
-//
 const detect = require('./src/detect');
 
 /***************
