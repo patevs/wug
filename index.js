@@ -22,7 +22,7 @@ const detect = require('./src/detect');
  *****************/
 
 (async () => {
-	console.log("Starting WUG...");
+	console.log("\nStarting WUG...\n");
 	// const col = getTermSize();
 	// genTable(col);
 	const nodev = await detect.getVersion('node')
