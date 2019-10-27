@@ -15,7 +15,9 @@ const termSize = require('term-size');
  * * FUNCTIONS *
  ***************/
 
-termSize();
+const _termsize = termSize();
+
+console.log(_termsize);
 
 /*************
  * * EXPORTS *
