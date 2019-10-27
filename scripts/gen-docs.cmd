@@ -57,6 +57,15 @@ CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.m
 ECHO. && ECHO [96m - execa - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md -o execa.md -#
 
+ECHO. && ECHO [96m - has - [0m
+CALL curl https://raw.githubusercontent.com/kdabir/has/master/README.md -o has.md -#
+
+ECHO. && ECHO [96m - platform.js - [0m
+CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.md -o platformjs.md -#
+
+ECHO. && ECHO [96m - term-size - [0m
+CALL curl https://raw.githubusercontent.com/sindresorhus/term-size/master/readme.md -o term-size.md -#
+
 :: ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencies... [0m
 
 :: Move into docs\dev-dependencies directory
