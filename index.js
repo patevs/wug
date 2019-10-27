@@ -50,13 +50,9 @@ const genTable = (col) => {
 // const result = spawn.sync('node', ['--version'], { stdio: 'inherit' });
 // console.log(result.toString());
 
-/*
-(async () => {
-	const {stdout} = await execa('echo', ['unicorns']);
-	console.log(stdout);
-})();
-*/
-
+/**
+ *	Get the current node version
+ */
 const getNodeVersion = async () => {
 	const {stdout} = await execa('node', ['--version']);
 	console.log(stdout);
