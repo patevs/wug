@@ -18,5 +18,8 @@
 		"execa": "^3.2.0",
 		"term-size": "^2.1.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"@babel/cli": "^7.6.4",
+		"@babel/core": "^7.6.4"
+	}
 }
