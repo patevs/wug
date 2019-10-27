@@ -9,7 +9,6 @@
  *************/
 
 const execa = require('execa');
-// const spawn = require('cross-spawn');
 const Table = require('cli-table3');
 const termSize = require('term-size');
 
@@ -46,26 +45,26 @@ const genTable = (col) => {
 	console.log(table.toString());
 }
 
-// Get NodeJS version
-// const result = spawn.sync('node', ['--version'], { stdio: 'inherit' });
-// console.log(result.toString());
-
 /**
- *	Get the current node version
+ *	Gets the version of a given command
  */
-const getNodeVersion = async () => {
-	const {stdout} = await execa('node', ['--version']);
-	console.log(stdout);
+const getVersion = async (command) => {
+	const {stdout} = await execa(command, ['--version']);
+	// console.log(stdout);
+	return stdout;
 }
 
 /*****************
  * * ENTRY POINT *
  *****************/
 
-(() => {
-	const col = getTermSize();
-	genTable(col);
-	getNodeVersion();
+(async () => {
+	// const col = getTermSize();
+	// genTable(col);
+	const node = await getVersion('node');
+	console.log(node);
+	const npm = await getVersion('npm');
+	console.log(npm);
 })();
 
 /*************
