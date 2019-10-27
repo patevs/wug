@@ -17,10 +17,10 @@
 ### Development Dependencies
 
 * [`babel`](https://github.com/babel/babel)
-* [`clean-webpack-plugin`](.)
+* [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin)
 * [`cross-env`](https://github.com/kentcdodds/cross-env)
-* [`webpack`](.)
-* [`webpack-cli`](.)
-* [`webpack-merge`](.)
+* [`webpack`](https://github.com/webpack/webpack)
+* [`webpack-cli`](https://github.com/webpack/webpack-cli)
+* [`webpack-merge`](https://github.com/survivejs/webpack-merge)
 
 ---
