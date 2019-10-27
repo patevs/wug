@@ -1,4 +1,3 @@
-
 /**************
  * * index.js *
  **************/
@@ -10,7 +9,6 @@
  *************/
 
 const termSize = require('term-size');
-
 
 /***************
  * * FUNCTIONS *
