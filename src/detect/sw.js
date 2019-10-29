@@ -22,18 +22,18 @@ const dynamicDetect = async (command, args) => {
 }
 
 //
-const detect = (name) => {
+const detect = async (name) => {
     //..
     // Run switch on name
     switch (name) {
         case 'node':
             // console.log('NodeJS');
-            dynamicDetect('node', '-v');
-            break;
+            return await dynamicDetect('node', '-v');
+            // break;
         case 'npm':
             // console.log('npm');
-            dynamicDetect('npm', '-v');
-            break;
+            return await dynamicDetect('npm', '-v');
+            // break;
         default:
             console.log('%s command not understood', name);
     };
