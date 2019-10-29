@@ -16,7 +16,6 @@
 		"docs": "cd scripts && gen-docs.cmd"
 	},
 	"dependencies": {
-		"cli-table3": "^0.5.1",
 		"execa": "^3.2.0"
 	},
 	"devDependencies": {
