@@ -12,6 +12,7 @@
 * [`execa`](https://github.com/sindresorhus/execa)
 * [`node-cross-spawn`](https://github.com/moxystudio/node-cross-spawn)
 * [`platform.js`](https://github.com/bestiejs/platform.js)
+* [`systeminformation`](https://github.com/sebhildebrandt/systeminformation)
 * [`term-size`](https://github.com/sindresorhus/term-size)
 
 ### Development Dependencies
