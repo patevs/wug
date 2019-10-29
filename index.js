@@ -8,7 +8,7 @@
  * * IMPORTS *
  *************/
 
-const detect = require('./src/detect');
+// const detect = require('./src/detect');
 
 /***************
  * * FUNCTIONS *
@@ -20,10 +20,15 @@ const detect = require('./src/detect');
  * * ENTRY POINT *
  *****************/
 
+(() => {
+    //..
+    console.log('\nStarting WUG...\n');
+    //..
+})();
+
+/*
 (async () => {
     console.log('\nStarting WUG...\n');
-    // const col = getTermSize();
-    // genTable(col);
     const nodev = await detect.__version('node');
     console.log(nodev);
     const npmv = await detect.__version('npm');
@@ -35,6 +40,7 @@ const detect = require('./src/detect');
     const javav = await detect._version('javac');
     console.log(javav);
 })();
+*/
 
 /*************
  * * EXPORTS *
