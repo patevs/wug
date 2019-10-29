@@ -15,9 +15,19 @@
  ***************/
 
 //
-const detect = (name) = {
+const detect = (name) => {
     //..
-    // TODO: Run switch on name
+    // Run switch on name
+    switch (name) {
+        case 'node':
+            console.log('NodeJS');
+            break;
+        case 'npm':
+            console.log('npm');
+            break;
+        default:
+            console.log('%s command not understood', name);
+    };
     //..
 }
 
