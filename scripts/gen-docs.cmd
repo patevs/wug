@@ -20,6 +20,18 @@ ECHO. & ECHO  [45m Curl Installation: [0m & ECHO.
 WHERE curl
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Curl installation could not be found... exiting! [0m & GOTO :EOF
 
+:: Check if 'docs' directory exists
+:: IF EXISTS ..\docs\NUL
+IF EXIST ..\docs\ (
+	:: docs directory already exists; nothing to do.
+	ECHO. & ECHO [96m [4mdocs[0m [96mdirectory already exists. [0m
+) ELSE (
+	:: docs directory does not exist; create docs directory
+	ECHO. & ECHO [96m [4mdocs[0m [96mdirectory does not exist. Creating [4mdocs[0m [96mdirectory... [0m
+	CALL mkdir ..\docs
+	ECHO [92m  Done! [0m
+)
+
 :: Remove old docs directory if exists
 :: IF EXIST ..\docs (
 ::    ECHO. && ECHO [96m Deleting old [4mdocs[0m [96mdirectory... [0m
