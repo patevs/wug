@@ -39,8 +39,6 @@ IF EXIST ..\docs\ (
 ::    ECHO [92m  Done! [0m
 ::)
 
-GOTO :EOF
-
 :: Create docs\dependencies directory
 ECHO. && ECHO [96m Creating [4mdocs\dependencies[0m [96mdirectory... [0m
 CALL mkdir ..\docs\dependencies
