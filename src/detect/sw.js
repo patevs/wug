@@ -8,11 +8,18 @@
  * * IMPORTS *
  *************/
 
-// const execa = require('execa');
+const execa = require('execa');
 
 /***************
  * * FUNCTIONS *
  ***************/
+
+const dynamicDetect = async (command, args) => {
+    //..
+    const { stdout } = await execa(command, args);
+    return stdout;
+    //..
+}
 
 //
 const detect = (name) => {
@@ -20,10 +27,12 @@ const detect = (name) => {
     // Run switch on name
     switch (name) {
         case 'node':
-            console.log('NodeJS');
+            // console.log('NodeJS');
+            dynamicDetect('node', '-v');
             break;
         case 'npm':
-            console.log('npm');
+            // console.log('npm');
+            dynamicDetect('npm', '-v');
             break;
         default:
             console.log('%s command not understood', name);
@@ -35,6 +44,8 @@ const detect = (name) => {
  * * EXPORTS *
  *************/
 
-// module.exports = { };
+module.exports = {
+    detect
+};
 
 /* EOF */
