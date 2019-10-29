@@ -18,6 +18,7 @@
 	"dependencies": {
 		"cli-table3": "^0.5.1",
 		"execa": "^3.2.0",
+		"systeminformation": "^4.14.17",
 		"term-size": "^2.1.0"
 	},
 	"devDependencies": {
