@@ -76,6 +76,10 @@ CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md 
 :: ECHO. && ECHO [96m - platform.js - [0m
 :: CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.md -o platformjs.md -#
 
+:: https://github.com/sebhildebrandt/systeminformation
+:: ECHO. && ECHO [96m - systeminformation - [0m
+:: CALL curl https://raw.githubusercontent.com/sebhildebrandt/systeminformation/master/README.md -o systeminformation.md -#
+
 ECHO. && ECHO [96m - term-size - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/term-size/master/readme.md -o term-size.md -#
 
