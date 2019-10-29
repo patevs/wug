@@ -2,21 +2,21 @@
  * * examples/execa.js *
  ***********************/
 
-'use strict';
+"use strict";
 
 /*************
  * * IMPORTS *
  *************/
 
-const execa = require('execa');
+const execa = require("execa");
 
 /***************
  * * FUNCTIONS *
  ***************/
 
 (async () => {
-  const { stdout } = await execa("echo", ["unicorns"]);
-  console.log(stdout);
+    const { stdout } = await execa("echo", ["unicorns"]);
+    console.log(stdout);
 })();
 
 /*************

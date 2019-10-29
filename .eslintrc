@@ -13,10 +13,10 @@
 	},
 	"plugins": ["prettier"],
     "rules": {
-		"prettier/prettier": "error",
+        "prettier/prettier": ["error", { "singleQuote": true }],
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
             "error",

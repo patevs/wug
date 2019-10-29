@@ -2,32 +2,32 @@
  * * src/detect.js *
  *******************/
 
-'use strict';
+"use strict";
 
 /*************
  * * IMPORTS *
  *************/
 
-const execa = require('execa');
+const execa = require("execa");
 
 /***************
  * * FUNCTIONS *
  ***************/
 
 const version = async command => {
-  const { stdout } = await execa(command, ['version']);
-  return stdout;
+    const { stdout } = await execa(command, ["version"]);
+    return stdout;
 };
 
 const _version = async command => {
-  const { stdout } = await execa(command, ['-version']);
-  return stdout;
+    const { stdout } = await execa(command, ["-version"]);
+    return stdout;
 };
 
 const __version = async command => {
-  const { stdout } = await execa(command, ['--version']);
-  // console.log(stdout);
-  return stdout;
+    const { stdout } = await execa(command, ["--version"]);
+    // console.log(stdout);
+    return stdout;
 };
 
 /*************
@@ -35,9 +35,9 @@ const __version = async command => {
  *************/
 
 module.exports = {
-  version,
-  _version,
-  __version
+    version,
+    _version,
+    __version
 };
 
 /* EOF */
