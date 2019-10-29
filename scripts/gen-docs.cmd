@@ -4,11 +4,11 @@
 :: scripts/gen-docs.cmd ::
 :: -------------------- ::
 
-:: Batch script which downloads project dependencies documentation.
+:: Batch script which downloads project dependencies readme documentation.
 :: Requires Curl to be installed.
 
 CLS
-ECHO. && ECHO [4mRunning Documentation Download Script[0m
+ECHO. && ECHO [4mRunning Documentation Readme Download Script[0m
 
 :: To download a file from GitHub run:
 :: CALL curl https://raw.githubusercontent.com/user/repository/branch/filename
@@ -24,7 +24,7 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Curl installation could not be found...
 :: IF EXISTS ..\docs\NUL
 IF EXIST ..\docs\ (
 	:: docs directory already exists; nothing to do.
- 	ECHO. & ECHO [96m [4mdocs[0m [96mdirectory already exists. [0m
+    ECHO. & ECHO [96m [4mdocs[0m [96mdirectory already exists. [0m
 ) ELSE (
 	:: docs directory does not exist; create docs directory
 	ECHO. & ECHO [96m [4mdocs[0m [96mdirectory does not exist. Creating [4mdocs[0m [96mdirectory... [0m
