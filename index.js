@@ -8,13 +8,30 @@
  * * IMPORTS *
  *************/
 
+// package.json
+var pjson = require('./package.json');
+
 // const detect = require('./src/detect');
+
+/***************
+ * * CONSTANTS *
+ ***************/
+
+const BINARY_NAME = pjson.name;
+const VERSION = pjson.version;
+
+// Regex to extract simple version - extracts numeric sem-ver style versions
+// REGEX_SIMPLE_VERSION="([[:digit:]]+\.?){2,3}"
 
 /***************
  * * FUNCTIONS *
  ***************/
 
-//
+// Log a welcome message
+const logWelcome = () => {
+    console.log('Starting ' + BINARY_NAME + '\n');
+    console.log('Version: ' + VERSION + '\n');
+}
 
 /*****************
  * * ENTRY POINT *
@@ -22,25 +39,9 @@
 
 (() => {
     //..
-    console.log('\nStarting WUG...\n');
+    logWelcome();
     //..
 })();
-
-/*
-(async () => {
-    console.log('\nStarting WUG...\n');
-    const nodev = await detect.__version('node');
-    console.log(nodev);
-    const npmv = await detect.__version('npm');
-    console.log(npmv);
-    const gitv = await detect.__version('git');
-    console.log(gitv);
-    const hubv = await detect.version('hub');
-    console.log(hubv);
-    const javav = await detect._version('javac');
-    console.log(javav);
-})();
-*/
 
 /*************
  * * EXPORTS *
