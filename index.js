@@ -29,7 +29,7 @@ const VERSION = pjson.version;
 
 // Log a welcome message
 const logWelcome = () => {
-    console.log('Starting ' + BINARY_NAME + '\n');
+    console.log('Starting ' + BINARY_NAME);
     console.log('Version: ' + VERSION + '\n');
 };
 
