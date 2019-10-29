@@ -33,6 +33,11 @@
         "test": "echo \"Error: no test specified\" && exit 0",
         "docs": "cd scripts && gen-docs.cmd"
     },
+    "devDependencies": {
+        "@babel/cli": "^7.6.4",
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3"
+    }
 ```
 
 ---
