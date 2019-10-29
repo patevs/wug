@@ -21,11 +21,20 @@ WHERE curl
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Curl installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Remove old docs directory if exists
-IF EXIST ..\docs (
-    ECHO. && ECHO [96m Deleting old [4mdocs[0m [96mdirectory... [0m
-    RMDIR /S /Q ..\docs
-    ECHO [92m  Done! [0m
+:: IF EXIST ..\docs (
+::    ECHO. && ECHO [96m Deleting old [4mdocs[0m [96mdirectory... [0m
+::    RMDIR /S /Q ..\docs
+::    ECHO [92m  Done! [0m
+::)
+
+:: Create docs directory is it doesnt already exist
+IF NOT EXIST ..\docs (
+    ECHO. && ECHO [96m [4mdocs[0m [96mdirectory does not exist... [0m
+    :: RMDIR /S /Q ..\docs
+    :: ECHO [92m  Done! [0m
 )
+
+GOTO :EOF
 
 :: Create docs\dependencies directory
 ECHO. && ECHO [96m Creating [4mdocs\dependencies[0m [96mdirectory... [0m
