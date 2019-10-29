@@ -21,11 +21,11 @@ WHERE curl
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Curl installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Remove old docs directory if exists
-IF EXIST ..\docs (
-    ECHO. && ECHO [96m Deleting old [4mdocs[0m [96mdirectory... [0m
-    RMDIR /S /Q ..\docs
-    ECHO [92m  Done! [0m
-)
+:: IF EXIST ..\docs (
+::     ECHO. && ECHO [96m Deleting old [4mdocs[0m [96mdirectory... [0m
+::     RMDIR /S /Q ..\docs
+::     ECHO [92m  Done! [0m
+:: )
 
 :: Create docs\dependencies directory
 ECHO. && ECHO [96m Creating [4mdocs\dependencies[0m [96mdirectory... [0m
@@ -54,15 +54,15 @@ CALL curl https://raw.githubusercontent.com/cli-table/cli-table3/master/README.m
 ECHO. && ECHO [96m - execa - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/execa/master/readme.md -o execa.md -#
 
-ECHO. && ECHO [96m - has - [0m
-CALL curl https://raw.githubusercontent.com/kdabir/has/master/README.md -o has.md -#
+:: ECHO. && ECHO [96m - has - [0m
+:: CALL curl https://raw.githubusercontent.com/kdabir/has/master/README.md -o has.md -#
 
 :: https://github.com/moxystudio/node-cross-spawn
-ECHO. && ECHO [96m - node-cross-spawn - [0m
-CALL curl https://raw.githubusercontent.com/moxystudio/node-cross-spawn/master/README.md -o node-cross-spawn.md -#
+:: ECHO. && ECHO [96m - node-cross-spawn - [0m
+:: CALL curl https://raw.githubusercontent.com/moxystudio/node-cross-spawn/master/README.md -o node-cross-spawn.md -#
 
-ECHO. && ECHO [96m - platform.js - [0m
-CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.md -o platformjs.md -#
+:: ECHO. && ECHO [96m - platform.js - [0m
+:: CALL curl https://raw.githubusercontent.com/bestiejs/platform.js/master/README.md -o platformjs.md -#
 
 ECHO. && ECHO [96m - term-size - [0m
 CALL curl https://raw.githubusercontent.com/sindresorhus/term-size/master/readme.md -o term-size.md -#
@@ -72,35 +72,35 @@ ECHO. && ECHO [92mDownloading Documentation for Project Development Dependencie
 :: Move into docs\dev-dependencies directory
 CALL cd ..\dev-dependencies
 
-ECHO. && ECHO [96m - clean-webpack-plugin - [0m
-CALL curl https://raw.githubusercontent.com/johnagan/clean-webpack-plugin/master/README.md -o clean-webpack-plugin.md -#
+:: ECHO. && ECHO [96m - clean-webpack-plugin - [0m
+:: CALL curl https://raw.githubusercontent.com/johnagan/clean-webpack-plugin/master/README.md -o clean-webpack-plugin.md -#
 
-ECHO. && ECHO [96m - cross-env - [0m
-CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
+:: ECHO. && ECHO [96m - cross-env - [0m
+:: CALL curl https://raw.githubusercontent.com/kentcdodds/cross-env/master/README.md -o cross-env.md -#
 
-ECHO. && ECHO [96m - webpack - [0m
-CALL curl https://raw.githubusercontent.com/webpack/webpack/master/README.md -o webpack.md -#
+ECHO. && ECHO [96m - eslint - [0m
+CALL curl https://raw.githubusercontent.com/eslint/eslint/master/README.md -o eslint.md -#
 
-ECHO. && ECHO [96m - webpack-cli - [0m
-CALL curl https://raw.githubusercontent.com/webpack/webpack-cli/master/README.md -o webpack-cli.md -#
-
-ECHO. && ECHO [96m - webpack-merge - [0m
-CALL curl https://raw.githubusercontent.com/survivejs/webpack-merge/master/README.md -o webpack-merge.md -#
-
-:: ECHO. && ECHO [96m - eslint - [0m
-:: CALL curl https://raw.githubusercontent.com/eslint/eslint/master/README.md -o eslint.md -#
-
-:: ECHO. && ECHO [96m - eslint-config-prettier - [0m
-:: CALL curl https://raw.githubusercontent.com/prettier/eslint-config-prettier/master/README.md -o eslint-config-prettier.md -#
+ECHO. && ECHO [96m - eslint-config-prettier - [0m
+CALL curl https://raw.githubusercontent.com/prettier/eslint-config-prettier/master/README.md -o eslint-config-prettier.md -#
 
 :: ECHO. && ECHO [96m - eslint-plugin-node - [0m
 :: CALL curl https://raw.githubusercontent.com/mysticatea/eslint-plugin-node/master/README.md -o eslint-plugin-node.md -#
 
-:: ECHO. && ECHO [96m - eslint-plugin-prettier - [0m
-:: CALL curl https://raw.githubusercontent.com/prettier/eslint-plugin-prettier/master/README.md -o eslint-plugin-prettier.md -#
+ECHO. && ECHO [96m - eslint-plugin-prettier - [0m
+CALL curl https://raw.githubusercontent.com/prettier/eslint-plugin-prettier/master/README.md -o eslint-plugin-prettier.md -#
 
-:: ECHO. && ECHO [96m - prettier - [0m
-:: CALL curl https://raw.githubusercontent.com/prettier/prettier/master/README.md -o prettier.md -#
+ECHO. && ECHO [96m - prettier - [0m
+CALL curl https://raw.githubusercontent.com/prettier/prettier/master/README.md -o prettier.md -#
+
+:: ECHO. && ECHO [96m - webpack - [0m
+:: CALL curl https://raw.githubusercontent.com/webpack/webpack/master/README.md -o webpack.md -#
+
+:: ECHO. && ECHO [96m - webpack-cli - [0m
+:: CALL curl https://raw.githubusercontent.com/webpack/webpack-cli/master/README.md -o webpack-cli.md -#
+
+:: ECHO. && ECHO [96m - webpack-merge - [0m
+:: CALL curl https://raw.githubusercontent.com/survivejs/webpack-merge/master/README.md -o webpack-merge.md -#
 
 ECHO. && ECHO [92mDone! [0m
 
