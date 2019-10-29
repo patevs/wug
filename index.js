@@ -13,9 +13,6 @@ var pjson = require('./package.json');
 
 // const detect = require('./src/detect');
 
-// System Information
-// const si = require('systeminformation');
-
 /***************
  * * CONSTANTS *
  ***************/
@@ -36,14 +33,6 @@ const logWelcome = () => {
     console.log('Version: ' + VERSION + '\n');
 };
 
-/*
-const getSysInfo = () => {
-    si.cpu()
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-}
-*/
-
 /*****************
  * * ENTRY POINT *
  *****************/
@@ -51,7 +40,6 @@ const getSysInfo = () => {
 (() => {
     //..
     logWelcome();
-    // getSysInfo();
     //..
 })();
 
