@@ -16,9 +16,9 @@ const si = require('systeminformation');
 
 const getSysInfo = () => {
     si.cpu()
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-}
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+};
 getSysInfo();
 
 /*************
