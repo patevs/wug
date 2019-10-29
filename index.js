@@ -12,7 +12,7 @@
 var pjson = require('./package.json');
 
 // const detect = require('./src/detect');
-const detect = require('./src/detect/sw');
+// const detect = require('./src/detect/sw');
 
 /***************
  * * CONSTANTS *
@@ -41,8 +41,6 @@ const logWelcome = () => {
 (async () => {
     //..
     logWelcome();
-    const nodev = await detect.detect('node');
-    console.log('node: ' + nodev);
     //..
 })();
 
