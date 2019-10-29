@@ -2,13 +2,13 @@
  * * examples/platform.js *
  **************************/
 
-"use strict";
+'use strict';
 
 /*************
  * * IMPORTS *
  *************/
 
-const platform = require("platform");
+const platform = require('platform');
 
 /***************
  * * FUNCTIONS *

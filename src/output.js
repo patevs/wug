@@ -2,14 +2,14 @@
  * * src/output.js *
  *******************/
 
-"use strict";
+'use strict';
 
 /*************
  * * IMPORTS *
  *************/
 
-const Table = require("cli-table3");
-const termSize = require("term-size");
+const Table = require('cli-table3');
+const termSize = require('term-size');
 
 /***************
  * * FUNCTIONS *
@@ -35,11 +35,11 @@ const genTable = () => {
     const cw = getTermSize();
     // Instantiate a new table
     let table = new Table({
-        head: ["COL 1", "COL 2", "COL 3"],
+        head: ['COL 1', 'COL 2', 'COL 3'],
         colWidths: [cw, cw, cw]
     });
     // table is an Array, so you can `push`, `unshift`, `splice` and friends
-    table.push(["one", "two", "three"]);
+    table.push(['one', 'two', 'three']);
     console.log(table.toString());
 };
 
