@@ -10,8 +10,8 @@
 	},
 	"scripts": {
 		"start": "node index.js",
-		"prettier": "prettier --check **/*.js && ECHO. && ECHO Prettier Complete!",
-		"lint": "eslint **/*.js && ECHO. && ECHO Lint Complete!",
+		"prettier": "prettier --write --check **/*.js && ECHO. && ECHO Prettier Complete!",
+		"lint": "eslint --fix **/*.js && ECHO. && ECHO Lint Complete!",
 		"test": "echo \"Error: no test specified\" && exit 0",
 		"docs": "cd scripts && gen-docs.cmd"
 	},
