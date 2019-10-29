@@ -21,8 +21,8 @@ const Table = require('cli-table3');
 
 // instantiate
 var table = new Table({
-    head: ['TH 1 label', 'TH 2 label']
-    // colWidths: [100, 200]
+  head: ["TH 1 label", "TH 2 label"]
+  // colWidths: [100, 200]
 });
 
 // table is an Array, so you can `push`, `unshift`, `splice` and friends
