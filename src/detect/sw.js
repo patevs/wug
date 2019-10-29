@@ -14,23 +14,12 @@
  * * FUNCTIONS *
  ***************/
 
-/*
-const version = async command => {
-    const { stdout } = await execa(command, ['version']);
-    return stdout;
-};
-
-const _version = async command => {
-    const { stdout } = await execa(command, ['-version']);
-    return stdout;
-};
-
-const __version = async command => {
-    const { stdout } = await execa(command, ['--version']);
-    // console.log(stdout);
-    return stdout;
-};
-*/
+//
+const detect = (name) = {
+    //..
+    // TODO: Run switch on name
+    //..
+}
 
 /*************
  * * EXPORTS *
