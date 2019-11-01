@@ -6,6 +6,7 @@
 
 * [`has`](https://github.com/kdabir/has)
 * [`hasbin`](https://github.com/springernature/hasbin)
+* [`command-exists`](https://github.com/mathisonian/command-exists)
 
 ### Dependencies
 
