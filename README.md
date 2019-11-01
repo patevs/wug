@@ -5,6 +5,7 @@
 ## Links & Resources
 
 * [`has`](https://github.com/kdabir/has)
+* [`hasbin`](https://github.com/springernature/hasbin)
 
 ### Dependencies
 
